@@ -184,3 +184,10 @@ or "warn/action" ineastd of "red/green"
   @custom-media --xSmall-viewport (max-width: 414px);
   @custom-media --xxSmall-viewport (max-width: 320px);
 }
+
+:root[data-theme='dark'] {
+  --color-ultramarine-blue: #737375;
+  --color-maastricht-blue: #fff;
+  --color-white-smoke: #1c1c1c;
+  --color-platinum: ##4d4d50;
+}

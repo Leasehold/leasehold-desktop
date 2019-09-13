@@ -71,6 +71,7 @@ const cssLoadersConfig = {
             features: {
               customProperties: {
                 variables: reactToolboxVariables,
+                warnings: false,
               },
             },
           }),

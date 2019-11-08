@@ -78,6 +78,8 @@ ReactRedux.connect = jest.fn((mapStateToProps, mapDispatchToProps = {}) => ((Com
   return MockConnect;
 }));
 
+ReactRedux.useSelector = jest.fn(selector => selector(defaultState));
+
 jest.mock('i18next', () => {
   function t(key, o) {
     return key.replace(/{{([^{}]*)}}/g, (a, b) => {

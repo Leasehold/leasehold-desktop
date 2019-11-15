@@ -2,7 +2,7 @@ import { getAccount } from './account';
 import { getSingleTransaction } from './lsk/transactions';
 import { getDelegates } from './delegates';
 import regex from '../regex';
-import { getBlocks } from './blocks';
+import liskServiceApi from './lsk/liskService';
 
 const filterAndOrderByMatch = (searchTerm, delegates) =>
   [...delegates].filter(result =>
@@ -42,8 +42,8 @@ const searchTransactions = ({ liskAPIClient, searchTerm }) => new Promise((resol
     .catch(() => reject({ transactions: [] })));
 
 const searchBlocks = ({ liskAPIClient, searchTerm }) => new Promise((resolve, reject) =>
-  getBlocks(liskAPIClient,
-    { blockId: searchTerm }).then(response => resolve({ blocks: response.data }))
+  liskServiceApi.getBlockDetails(liskAPIClient,
+    { id: searchTerm }).then(response => resolve({ blocks: response.data }))
     .catch(() => reject({ blocks: [] })));
 
 const getSearches = search => ([

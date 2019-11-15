@@ -81,6 +81,7 @@ describe('Utils: Search', () => {
   it('should search {transactions,delegates} when only transaction pattern matched', () =>
     expect(searchAll(liskAPIClient, { searchTerm: '1337' })).to.eventually.deep.equal({
       addresses: [],
+      blocks: [],
       transactions: transactionsResponse.data,
       delegates: delegatesResponseOrdered.delegates,
     }));
@@ -111,6 +112,7 @@ describe('Utils: Search', () => {
     getSingleTransactionStub.returnsPromise().rejects({ success: false });
     return expect(searchAll(liskAPIClient, { searchTerm: '1337' })).to.eventually.deep.equal({
       addresses: [],
+      blocks: [],
       transactions: [],
       delegates: delegatesResponseOrdered.delegates,
     });

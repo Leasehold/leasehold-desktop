@@ -12,7 +12,7 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md) for more information.
 ## Development
 
 ```
-git clone https://github.com/LiskHQ/lisk-hub.git
+git clone https://github.com/Leasehold/lisk-desktop
 cd lisk-hub
 npm install
 npm run dev

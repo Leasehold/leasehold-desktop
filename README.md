@@ -13,7 +13,7 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md) for more information.
 
 ```
 git clone https://github.com/Leasehold/lisk-desktop
-cd lisk-hub
+cd lisk-desktop
 npm install
 npm run dev
 ```

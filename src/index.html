@@ -9,7 +9,7 @@
         <meta property="og:title" content="Lisk Hub">
         <meta property="og:description" name="description" content="Lisk Hub is an all-in-one solution to manage your Lisk ID, access and send LSK tokens, as well as vote for delegates.">
         <meta property="og:image" content="https://lisk.io/hub/assets/images/og-logo.png">
-        <title>Lisk Hub</title>
+        <title>Leasehold Hub</title>
         <style>
           <%= compilation.assets['head.css'].source() %>
         </style>
@@ -17,7 +17,7 @@
         <%= htmlWebpackPlugin.files.css.map(href =>
           '<link href="' + href + '" rel="stylesheet">'
         ).join('\n') %>
-        <link rel="icon" type="image/png" href="./assets/images/LISK.png" />
+        <link rel="icon" type="image/png" href="./assets/images/LSH.png" />
         <script>
           /* Following comment is a placeholder used by `npm run build:testnet`, do not remove */
           var defaultNet = "mainnet";//defaultNetwork
@@ -32,8 +32,8 @@
         <div id="app"></div>
         <div class='splash-screen'>
         <figure class='logo'>
-            <img alt="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiIgdmlld0JveD0iMCAwIDU2IDU2Ij4KICAgIDxwYXRoIGZpbGw9IiAjYzVjZmU0IiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0yNS41NDUgNDMuOTNjLS4wMjQuMDIzLS4wNy4wNDctLjA5NC4wN2gtMi42MmMtLjA0NyAwLS4wNy0uMDIzLS4wOTQtLjA0N2wtNy43Mi04LjcwNGEuMTUuMTUgMCAwIDEgMC0uMTRsOS42MTUtMTYuNTY0Yy4wNDctLjA3LjE2NC0uMDcuMjEgMGwyLjY5MSA0LjY0NmMuMDIzLjAyMy4wMjMuMDcgMCAuMTE3bC02LjUwMyAxMS4xOWMtLjAyNC4wNDcgMCAuMDk0LjAyMy4xNDFsMy44ODMgNC4zNjRjLjAyNC4wMjMuMDcuMDQ3LjA5NC4wNDdoNC41ODVjLjExNyAwIC4xNjQuMTE3LjA5NC4xODhsLTQuMTY0IDQuNjkyem0yLjg1NC0zMS44NmMuMDQ2LS4wOTMuMTYzLS4wOTMuMTg3IDBMNDEuOTkgMzUuMDYyYy4wMjQuMDQ3IDAgLjA5My0uMDIzLjE0bC03LjcyIDguNzA0YS4xNzcuMTc3IDAgMCAxLS4wOTQuMDQ3aC02LjI2OWMtLjExNyAwLS4xNjQtLjExNy0uMDk0LS4xODhsNC4xODgtNC43MzkgMy45My00LjQxYy4wNDctLjA0Ny4wNDctLjA5NC4wMjMtLjE0bC03LjQzOS0xMi44MS0yLjgwNy00LjgzM2MtLjAyMy0uMDI0LS4wMjMtLjA3IDAtLjExN2wyLjcxNC00LjY0NnoiLz4KPC9zdmc+Cg==">
-          <div class="lds-ring">
+            <img alt="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHZpZXdCb3g9IjM1IDEwIDEzMCA2MyIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBkPSJNODYuMDMgMjUuOTA1QzkwLjk1IDE5Ljc0NSA5Ny42MiAxNS4wMjUgMTA1LjI5IDEyLjUxNUw5My42MyAwLjg1NUM5Mi40OSAtMC4yODUgOTAuNjQgLTAuMjg1IDg5LjUgMC44NTVMNzMuNjggMTYuNjY1Qzc4LjM3IDE4Ljk3NSA4Mi41NSAyMi4xMjUgODYuMDMgMjUuOTA1WiIgZmlsbD0iI2M1Y2ZlNCIvPg0KPHBhdGggZD0iTTgzLjA5IDMwLjA5NUM3OS41MSAyNS45NDUgNzUuMDIgMjIuNjI1IDY5LjkzIDIwLjQ1NUw2NC43OCAyNS41NzVDNjMuNjQgMjYuNzE1IDYzIDI4LjI1NSA2MyAyOS44NjVWNTkuMDg1QzYzIDYwLjY5NSA2NC4zMSA2Mi4wMDUgNjUuOTIgNjIuMDA1SDc4LjMxQzc3LjQ3IDU4LjcyNSA3NyA1NS4yNDUgNzcgNTEuNjU1Qzc2Ljk5IDQzLjc1NSA3OS4yNCAzNi4zODUgODMuMDkgMzAuMDk1WiIgZmlsbD0iI2M1Y2ZlNCIvPg0KPHBhdGggZD0iTTEwOS4zMSAxNi41MzVDOTMuNiAyMC41MTUgODEuOTggMzQuNzE1IDgxLjk4IDUxLjY1NUM4MS45OCA1NS4yNzUgODIuNTIgNTguNzE1IDgzLjQ5IDYyLjAwNUg4OC4xMUM5My42NCA0OS4wMTUgMTA1LjcgMzkuNDA1IDEyMC4xNiAzNy4zMjVWMjkuODY1QzEyMC4xNiAyOC4yNTUgMTE5LjUyIDI2LjcxNSAxMTguMzggMjUuNTc1TDEwOS4zMSAxNi41MzVaIiBmaWxsPSIjYzVjZmU0Ii8+DQo8cGF0aCBkPSJNOTMuNiA2MS45OTVIMTE3LjI0QzExOC44NSA2MS45OTUgMTIwLjE2IDYwLjY4NSAxMjAuMTYgNTkuMDc1VjQyLjM3NUMxMDguNDcgNDQuMjg1IDk4LjY5IDUxLjc4NSA5My42IDYxLjk5NVoiIGZpbGw9IiNjNWNmZTQiLz4NCjwvc3ZnPg">
+        <div class="lds-ring">
               <div> </div>
               <div> </div>
               <div> </div>

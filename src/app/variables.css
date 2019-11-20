@@ -92,8 +92,8 @@ or "warn/action" ineastd of "red/green"
   /*************************
       Base Colors
   *************************/
-  --color-ultramarine-blue: #4070f4;
-  --color-maastricht-blue: #0c152e;
+  --color-ultramarine-blue: #81c341;
+  --color-maastricht-blue: #ffffff;
   --color-slate-gray: #70778b;
   --color-blue-gray: #8a8ca2;
   --color-dark-blue: #19224d;
@@ -119,7 +119,7 @@ or "warn/action" ineastd of "red/green"
   --color-danger: #ff7721;
   --color-error: #ec6868;
   --color-content: #19224d;
-  --color-content-light: #0c152e;
+  --color-content-light: #ffffff;
   --color-primary-very-light: #e8f0fa;
   --color-content-lighter: rgba(46, 44, 59, 0.6);
   --color-background-dark: #1e194d;
@@ -129,7 +129,7 @@ or "warn/action" ineastd of "red/green"
   --color-background-wrapper: var(--color-mystic);
   --color-background-header: #fbfcfd;
   --color-background-menu: var(--color-white-smoke);
-  --color-link-active: #4070f4;
+  --color-link-active: #81c341;
   --color-title-header-box: #4c4c4c;
   --color-link: var(--color-primary-standard);
   --color-rows-hover: var(--primary-background-color);

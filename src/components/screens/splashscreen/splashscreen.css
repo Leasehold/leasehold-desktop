@@ -4,7 +4,7 @@
 .splashscreen {
   align-items: center;
   background-color: var(--color-maastricht-blue);
-  background-image: url('../../../assets/images/illustrations/illustration-splash-dark.svg');
+  /* background-image: url('../../../assets/images/illustrations/illustration-splash-dark.svg'); */
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
@@ -44,7 +44,7 @@
   & > h1 {
     @mixin headingLarge;
 
-    color: var(--color-white);
+    color: var(--color-black);
     margin: 0;
     text-align: center;
   }

@@ -90,10 +90,10 @@ class Splashscreen extends React.Component {
       <div className={`${styles.splashscreen}`}>
         <div className={`${styles.wrapper}`}>
           <div className={`${styles.titleHolder}`}>
-            <h1>{t('Welcome to the Lisk Hub!')}</h1>
+            <h1>{t('Welcome to the Leasehold Hub!')}</h1>
             <p>
               {
-              t('Create an account or sign in to manage your LSK, vote for who secures the network or become a delegate.')
+              t('Create an account or sign in to manage your LSH, vote for who secures the network or become a delegate.')
             }
             </p>
           </div>

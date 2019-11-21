@@ -61,7 +61,7 @@ class Dashboard extends React.Component {
       content: t('Keep up-to-date with announcements from the Lisk Foundation. Check what network delegates have been up to with dedicated profile pages.'),
       illustration: 'builtAroundCommunity',
     }, {
-      title: t('Send LSK and BTC'),
+      title: t('Send LSH and BTC'),
       content: t('Personalize each transaction with a custom message. Look up its value in a fiat currency of your choice.'),
       illustration: 'sendLSKTokens',
     }, {

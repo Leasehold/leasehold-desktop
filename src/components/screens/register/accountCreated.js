@@ -17,7 +17,7 @@ const AccountCreated = ({ t, account }) => (
       <h1>
         {t('Your account was created!')}
       </h1>
-      <p className={styles.text}>{t('Here’s your address! You can now securely store and manage your LSK tokens.')}</p>
+      <p className={styles.text}>{t('Here’s your address! You can now securely store and manage your LSH tokens.')}</p>
     </div>
 
     <div className={`${styles.accountHolder}`}>

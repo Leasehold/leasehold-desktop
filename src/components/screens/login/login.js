@@ -134,7 +134,7 @@ class Login extends React.Component {
                 {t('Sign in with a passphrase')}
               </h1>
               <p>
-                {t('New to Lisk? ')}
+                {t('New to Leasehold? ')}
                 <Link
                   className={`${styles.link}`}
                   to={routes.register.path}
@@ -154,7 +154,7 @@ class Login extends React.Component {
                   >
                     <React.Fragment>
                       <p className={`${styles.tooltipText}`}>
-                        {t('A passphrase is a combination of a username and password. You saved your passphrase when registering your Lisk account.')}
+                        {t('A passphrase is a combination of a username and password. You saved your passphrase when registering your Leasehold account.')}
                       </p>
                       <p className={`${styles.tooltipText}`}>
                         {t('If you are typing out your passphrase you can use tab or space to go to the next field.')}

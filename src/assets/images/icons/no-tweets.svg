@@ -7,7 +7,7 @@
     <mask id="no-tweets-b" fill="#fff">
       <use xlink:href="#no-tweets-a"/>
     </mask>
-    <polygon fill="#4070F4" points="26.413 39.235 43.609 39.235 43.609 22.039 26.413 22.039" mask="url(#no-tweets-b)"/>
+    <polygon fill="#63ca00" points="26.413 39.235 43.609 39.235 43.609 22.039 26.413 22.039" mask="url(#no-tweets-b)"/>
     <path stroke="#FFF" stroke-width="1.5" d="M29.7602 25.3868L40.2602 35.8868M40.2602 25.3868L29.7602 35.8868" mask="url(#no-tweets-b)"/>
   </g>
 </svg>

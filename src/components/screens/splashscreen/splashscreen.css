@@ -3,7 +3,8 @@
 
 .splashscreen {
   align-items: center;
-  background-color: var(--color-maastricht-blue);
+  background-color: white;
+  /*background-color: var(--color-maastricht-blue);*/
   /* background-image: url('../../../assets/images/illustrations/illustration-splash-dark.svg'); */
   background-position: center;
   background-size: cover;

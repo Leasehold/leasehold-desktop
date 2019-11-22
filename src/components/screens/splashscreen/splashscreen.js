@@ -93,7 +93,7 @@ class Splashscreen extends React.Component {
             <h1>{t('Welcome to the Leasehold Hub!')}</h1>
             <p>
               {
-              t('Create an account or sign in to manage your LSH, vote for who secures the network or become a delegate.')
+              t('Create an account or sign in to manage your LSH, vote for who secures the network or becomes a delegate.')
             }
             </p>
           </div>

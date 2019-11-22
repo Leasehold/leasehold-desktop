@@ -2,7 +2,7 @@
 @import '../../../app/mixins.css';
 
 .onboarding {
-  background-color: var(--color-maastricht-blue);
+  background-color: #8ecdad75;
   border-radius: var(--border-radius-standard);
   box-sizing: border-box;
   color: var(--color-white);

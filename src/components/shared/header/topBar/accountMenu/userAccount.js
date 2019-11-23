@@ -119,9 +119,6 @@ class UserAccount extends React.Component {
           target="_blank"
           onClick={this.toggleDropdown}
         >
-          <Icon name="feedback" className={styles.defaultIcon} />
-          <Icon name="feedbackActive" className={styles.activeIcon} />
-          <span>{t('Give Feedback')}</span>
         </a>
 
         <Link

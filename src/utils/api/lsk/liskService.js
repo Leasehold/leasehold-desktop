@@ -1,5 +1,6 @@
 import * as popsicle from 'popsicle';
 
+const lshServiceUrl = 'https://leasehold.io';
 const liskServiceUrl = 'https://service.lisk.io';
 
 const liskServiceApi = {
@@ -15,11 +16,12 @@ const liskServiceApi = {
       }).catch(reject);
   }),
   getNewsFeed: () => new Promise((resolve, reject) => {
-    popsicle.get(`${liskServiceUrl}/api/newsfeed`)
+    popsicle.get(`${lshServiceUrl}/api/newsfeed`)
       .use(popsicle.plugins.parse('json'))
       .then((response) => {
         if (response.body) {
           resolve(response.body);
+          console.log(response.body);
         } else {
           reject(response.body);
         }
@@ -28,3 +30,4 @@ const liskServiceApi = {
 };
 
 export default liskServiceApi;
+

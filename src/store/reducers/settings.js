@@ -5,7 +5,8 @@ import localJSONStorage from '../../utils/localJSONStorage';
 
 export const channels = {
   academy: false,
-  twitter: true,
+  twitter: false,
+  discord: true,
   blog: false,
   github: false,
   reddit: false,

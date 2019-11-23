@@ -121,7 +121,7 @@ class Splashscreen extends React.Component {
             >
               <React.Fragment>
                 <p className={`${styles.tooltipText}`}>
-                  {t('You can explore Lisk network using Hub without signing in.')}
+                  {t('You can explore Leasehold network using Hub without signing in.')}
                 </p>
                 <p className={`${styles.tooltupText}`}>
                   {t('You won\'t be able to make any transactions and all the content will be in read-only mode.')}
@@ -130,11 +130,6 @@ class Splashscreen extends React.Component {
             </Tooltip>
           </span>
 
-          <span className={styles.linkWrapper}>
-            <Link className={`${styles.link} signin-hwWallet-button`} to={routes.hwWallet.path}>
-              {t('Sign in with a hardware wallet')}
-            </Link>
-          </span>
         </div>
       </div>
     );

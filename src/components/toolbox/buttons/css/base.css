@@ -72,13 +72,13 @@
   color: var(--color-maastricht-blue) !important;
 
   &:global(.light) {
-    color: var(--color-white) !important;
-    border-color: var(--light-border-color) !important;
+    color: #81c341 !important;
+    border-color: #81c341 !important;
 
     &:focus,
     &:hover {
       border-color: color(var(--light-border-color) a(58%)) !important;
-      color: var(--color-white) !important;
+      color: #81c341 !important;
     }
   }
 

@@ -5,7 +5,6 @@ import styles from './userAccount.css';
 import Icon from '../../../../toolbox/icon';
 import { tokenKeys } from '../../../../../constants/tokens';
 import routes from '../../../../../constants/routes';
-import feedbackLinks from '../../../../../constants/feedbackLinks';
 import externalLinks from '../../../../../constants/externalLinks';
 import DropdownButton from '../../../../toolbox/dropdownButton';
 import { SecondaryButton } from '../../../../toolbox/buttons/button';
@@ -110,15 +109,6 @@ class UserAccount extends React.Component {
           <Icon name="discordIcon" className={styles.defaultIcon} />
           <Icon name="discordIconActive" className={styles.activeIcon} />
           <span>{t('Discord')}</span>
-        </a>
-
-        <a
-          className={styles.dropdownOption}
-          href={feedbackLinks.general}
-          rel="noopener noreferrer"
-          target="_blank"
-          onClick={this.toggleDropdown}
-        >
         </a>
 
         <Link

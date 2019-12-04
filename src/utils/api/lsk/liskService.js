@@ -21,7 +21,6 @@ const liskServiceApi = {
       .then((response) => {
         if (response.body) {
           resolve(response.body);
-          console.log(response.body);
         } else {
           reject(response.body);
         }
@@ -30,4 +29,3 @@ const liskServiceApi = {
 };
 
 export default liskServiceApi;
-

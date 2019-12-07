@@ -8,7 +8,7 @@ import BookmarkDropdown from '../../../bookmarks/bookmarkDropdown';
 import DropdownButton from '../../../../toolbox/dropdownButton';
 import HeaderAccountInfo from './headerAccountInfo';
 import PageHeader from '../../../../toolbox/pageHeader';
-import Request from '../request';
+// import Request from '../request';
 import routes from '../../../../../constants/routes';
 import styles from './transactionsOverviewHeader.css';
 
@@ -42,9 +42,10 @@ class transactionsHeader extends React.Component {
         <PageHeader
           className="wallet-header"
           title={t('{{token}} Wallet', { token: tokenMap[activeToken].label })}
-          subtitle={t('All important information at a glance')}
+          subtitle={t('Welcome')}
         >
           <div className={`${styles.buttonsHolder}`}>
+            {/*
             <DropdownButton
               className={`${styles.requestDropdown} requestContainer request-dropdown`}
               buttonClassName="tx-receive-bt"
@@ -52,9 +53,10 @@ class transactionsHeader extends React.Component {
             >
               <Request address={address} token={activeToken} t={t} />
             </DropdownButton>
+            */}
             <Link to={`${routes.send.path}?wallet`} className="tx-send-bt">
               <PrimaryButton>
-                {t('Send {{token}}', { token: activeToken })}
+                {t('Send LSH', { token: activeToken })}
               </PrimaryButton>
             </Link>
           </div>
@@ -76,7 +78,7 @@ class transactionsHeader extends React.Component {
               className="send-to-address"
             >
               <SecondaryButton>
-                {t('Send {{token}} to this Account ', { token: activeToken })}
+                {t('Send LSH to this Account ', { token: activeToken })}
               </SecondaryButton>
             </Link>
             <DropdownButton

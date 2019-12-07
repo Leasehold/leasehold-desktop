@@ -3,7 +3,7 @@ import grid from 'flexboxgrid/dist/flexboxgrid.css';
 import styles from './delegates.css';
 import DelegatesListView from './delegatesListView';
 import VotingHeader from './votingHeader';
-import Onboarding from '../../toolbox/onboarding/onboarding';
+// import Onboarding from '../../toolbox/onboarding/onboarding';
 import { getTotalActions } from '../../../utils/voting';
 
 class Delegates extends React.Component {
@@ -15,7 +15,7 @@ class Delegates extends React.Component {
     };
 
     this.toggleVotingMode = this.toggleVotingMode.bind(this);
-    this.getOnboardingSlides = this.getOnboardingSlides.bind(this);
+    // this.getOnboardingSlides = this.getOnboardingSlides.bind(this);
   }
 
   toggleVotingMode() {
@@ -57,6 +57,7 @@ class Delegates extends React.Component {
     const { votingModeEnabled } = this.state;
     return (
       <div className={`${grid.row} ${styles.wrapper}`} ref={(el) => { this.root = el; }}>
+        {/*
         { account && account.address
           ? (
             <Onboarding
@@ -68,6 +69,7 @@ class Delegates extends React.Component {
           )
           : null
         }
+        */}
         <VotingHeader
           t={t}
           votingModeEnabled={votingModeEnabled}

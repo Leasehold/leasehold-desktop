@@ -40,6 +40,7 @@ class RequestWrapper extends React.Component {
               text={copyLabel}
               copyClassName={styles.copyIcon}
             />
+            {/*
             <span className={`${styles.footerContent} ${showQRCode ? styles.hide : ''}`}>
               {t('Got the Lisk Mobile App?')}
               {' '}
@@ -50,6 +51,7 @@ class RequestWrapper extends React.Component {
                 {t('Show the QR code')}
               </span>
             </span>
+            */}
           </footer>
         </section>
         <section className={`${styles.qrSection} ${!showQRCode ? styles.hide : ''} qrcode-section`}>

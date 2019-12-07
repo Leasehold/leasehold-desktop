@@ -10,7 +10,7 @@ import ExtensionPoint from '../../shared/extensionPoint';
 import LiskHubExtensions from '../../../utils/liskHubExtensions';
 import RecentTransactions from './recentTransactions';
 import styles from './dashboard.css';
-import Onboarding from '../../toolbox/onboarding/onboarding';
+// import Onboarding from '../../toolbox/onboarding/onboarding';
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -42,9 +42,9 @@ class Dashboard extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.resizeWindow);
-  }
+  // componentWillUnmount() {
+  //  window.removeEventListener('resize', this.resizeWindow);
+  // }
 
   resizeWindow() {
     this.setState({ isDesktop: window.innerWidth > breakpoints.m });
@@ -83,7 +83,8 @@ class Dashboard extends React.Component {
     return (
       <React.Fragment>
         <div className={`${styles.wrapper} dashboard-container`}>
-          {
+          {/*
+           {
             isLoggedIn
               ? (
                 <Onboarding
@@ -94,9 +95,10 @@ class Dashboard extends React.Component {
               )
               : null
           }
+          */}
           <PageHeader
             title={t('Dashboard')}
-            subtitle={t('All important information at a glance')}
+            subtitle={t('Welcome')}
           />
           <div className={`${styles.main}`}>
             <div className={styles.subContainer}>
@@ -125,6 +127,16 @@ class Dashboard extends React.Component {
               <ExtensionPoint identifier={LiskHubExtensions.identifiers.dashboardColumn3} />
             </div>
 
+            {
+              isDesktop
+                ? (
+                  <div className={`${styles.bookmarks} bookmarks`}>
+                    <BookmarksList history={history} limit={5} />
+                    <ExtensionPoint identifier={LiskHubExtensions.identifiers.dashboardColumn1} />
+                  </div>
+                )
+                : null
+            }
           </div>
         </div>
       </React.Fragment>

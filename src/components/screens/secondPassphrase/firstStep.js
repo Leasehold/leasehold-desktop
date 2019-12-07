@@ -14,7 +14,7 @@ const FirstStep = ({
     </Box.Header>
     <Box.Content>
       <p className={styles.info}>
-        {htmlStringToReact(t('secondPassphraseInfoParagraph', 'After registration, your second passphrase will be <strong>required</strong> when <strong>confirming every transaction</strong> and every vote. You are responsible for safekeeping your second passphrase. No one can restore it, not even Lisk. Once activated a second passphrase <strong>can’t be turned off.</strong>', { interpolation: { escapeValue: false } }))}
+        {htmlStringToReact(t('secondPassphraseInfoParagraph', 'After registration, your second passphrase will be <strong>required</strong> when <strong>confirming every transaction</strong> and every vote. You are responsible for safekeeping your second passphrase. No one can restore it, not even Leasehold. Once activated a second passphrase <strong>can’t be turned off.</strong>', { interpolation: { escapeValue: false } }))}
       </p>
       <PassphraseBackup
         account={account}

@@ -7,6 +7,7 @@ import CheckBox from '../../toolbox/checkBox';
 import HardwareWalletIllustration from '../../toolbox/hardwareWalletIllustration';
 import PassphraseInput from '../../toolbox/passphraseInput';
 import Tooltip from '../../toolbox/tooltip/tooltip';
+// import links from '../../../constants/externalLinks';
 import styles from './transactionSummary.css';
 import { formatAmountBasedOnLocale } from '../../../utils/formattedNumber';
 
@@ -77,10 +78,10 @@ class TransactionSummary extends React.Component {
   getTooltip() {
     const { t, token } = this.props;
     return {
-      LSK: {
+      LSH: {
         title: t('Transaction fee'),
-        children: t(`Every transaction needs to be confirmed and forged into Lisk blockchain network. 
-                    Such operations require hardware resources and because of that there is a small fee for processing those.`),
+        children: t(`Transactions need to be confirmed and forged on the Leasehold blockchain network. 
+                    Such operations require hardware resources and because of that there is a small processing fee.`),
       },
       BTC: {
         children: t('Bitcoin transactions are made with some delay that depends on two parameters: the fee and the bitcoin network’s congestion. The higher the fee, the higher the processing speed.'),
@@ -91,7 +92,7 @@ class TransactionSummary extends React.Component {
   render() {
     const {
       title, children, confirmButton, cancelButton, account,
-      t, fee, confirmation, classNames, token,
+      t, fee, confirmation, classNames, // token,
     } = this.props;
     const {
       secondPassphrase, isHardwareWalletConnected, isConfirmed,
@@ -118,7 +119,7 @@ class TransactionSummary extends React.Component {
               </Tooltip>
             </label>
             <label className={`${styles.feeValue} fee-value`}>
-              {`${formatAmountBasedOnLocale({ value: fee })} ${token}`}
+              {`${formatAmountBasedOnLocale({ value: fee })} LSH`}
             </label>
           </section>
           {
@@ -195,7 +196,7 @@ class TransactionSummary extends React.Component {
 }
 
 TransactionSummary.defaultProps = {
-  token: 'LSK',
+  token: 'LSH',
 };
 
 export default TransactionSummary;

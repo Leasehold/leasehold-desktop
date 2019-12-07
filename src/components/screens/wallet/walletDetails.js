@@ -11,7 +11,7 @@ import styles from './walletDetails.css';
 class WalletDetails extends React.Component {
   render() {
     const {
-      balance, t, address, activeToken,
+      balance, t, address, // activeToken,
     } = this.props;
 
     return (
@@ -42,7 +42,7 @@ class WalletDetails extends React.Component {
               <div className={styles.value}>
                 <LiskAmount val={balance} />
                 {' '}
-                {activeToken}
+                {'LSH'}
               </div>
             </DiscreetMode>
           </div>

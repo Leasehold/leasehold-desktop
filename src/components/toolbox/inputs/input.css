@@ -136,7 +136,7 @@
 
   &.dark {
     border-color: var(--light-border-color);
-    background-color: var(--color-maastricht-blue);
+    background-color: white;
     color: var(--color-white);
   }
 

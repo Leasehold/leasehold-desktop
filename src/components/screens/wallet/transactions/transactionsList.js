@@ -1,9 +1,9 @@
 import { withTranslation } from 'react-i18next';
 import React from 'react';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
-import { tokenMap } from '../../../../constants/tokens';
+// import { tokenMap } from '../../../../constants/tokens';
 import EmptyState from '../../../toolbox/box/emptyState';
-import Illustration from '../../../toolbox/illustration';
+// import Illustration from '../../../toolbox/illustration';
 import ProgressBar from '../../../toolbox/progressBar/progressBar';
 import TransactionRow from './transactionRow';
 import TransactionsHeader from './transactionsHeader';
@@ -41,7 +41,7 @@ class TransactionsList extends React.Component {
     const isLoading = loading.filter(type =>
       actionTypes.getTransactions === type).length > 0;
 
-    const showDetails = activeToken !== tokenMap.BTC.key;
+    const showDetails = activeToken;// !== tokenMap.BTC.key;
 
     const columnClassNames = {
       ...(showDetails ? {
@@ -92,7 +92,7 @@ class TransactionsList extends React.Component {
           )
           : (
             <EmptyState className={styles.emptyState}>
-              <Illustration name="emptyWallet" />
+              {t('No transactions.')}
             </EmptyState>
           )
       }

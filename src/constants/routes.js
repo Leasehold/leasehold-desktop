@@ -1,4 +1,4 @@
-import { tokenMap } from './tokens';
+// import { tokenMap } from './tokens';
 import AddBookmark from '../components/screens/bookmarks/addBookmark';
 import Bookmarks from '../components/screens/bookmarks';
 import Dashboard from '../components/screens/dashboard';
@@ -59,13 +59,13 @@ export default {
     path: '/delegates/vote',
     component: Voting,
     isPrivate: true,
-    forbiddenTokens: [tokenMap.BTC.key],
+    // forbiddenTokens: [tokenMap.BTC.key],
   },
   delegates: {
     path: '/delegates',
     component: Delegates,
     isPrivate: false,
-    forbiddenTokens: [tokenMap.BTC.key],
+    // forbiddenTokens: [tokenMap.BTC.key],
   },
   settings: {
     path: '/settings',
@@ -76,25 +76,25 @@ export default {
     path: '/second-passphrase',
     component: SecondPassphrase,
     isPrivate: true,
-    forbiddenTokens: [tokenMap.BTC.key],
+    // forbiddenTokens: [tokenMap.BTC.key],
   },
   signMessage: {
     path: '/sign-message',
     component: SignMessage,
     isPrivate: true,
-    forbiddenTokens: [tokenMap.BTC.key],
+    // forbiddenTokens: [tokenMap.BTC.key],
   },
   verifyMMessage: {
     path: '/verify-message',
     component: VerifyMessage,
     isPrivate: false,
-    forbiddenTokens: [tokenMap.BTC.key],
+    // forbiddenTokens: [tokenMap.BTC.key],
   },
   registerDelegate: {
     path: '/register-delegate',
     component: RegisterDelegate,
     isPrivate: true,
-    forbiddenTokens: [tokenMap.BTC.key],
+    // forbiddenTokens: [tokenMap.BTC.key],
   },
   addAccount: {
     path: '/add-account',

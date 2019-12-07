@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './newsFeed.css';
 import News from './news';
 import Box from '../../../toolbox/box';
-import Icon from '../../../toolbox/icon';
+// import Icon from '../../../toolbox/icon';
 
 class NewsFeed extends React.Component {
   render() {
@@ -35,9 +35,9 @@ class NewsFeed extends React.Component {
           {
               newsFeed.error && (
                 <Box.EmptyState className="empty-news">
-                  <Icon name="noTweetsIcon" />
-                  <h1>{t('No available tweets')}</h1>
-                  <p>{t('At this moment there is a connection problem with the tweets feed')}</p>
+                  {/* <Icon name="noTweetsIcon" /> */}
+                  <h1>{t('No available news')}</h1>
+                  <p>{t('There seems to be some technical issue with retrieving news feed')}</p>
                 </Box.EmptyState>
               )
             }

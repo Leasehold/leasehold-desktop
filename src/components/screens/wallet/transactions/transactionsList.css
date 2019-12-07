@@ -3,6 +3,12 @@
 
 .emptyState {
   height: 300px;
+  color: #70778b;
+  font-family: 'basier-circle', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 20px;
 }
 
 .results {

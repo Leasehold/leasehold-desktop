@@ -1,11 +1,11 @@
-import QRCode from 'qrcode.react';
+// import QRCode from 'qrcode.react';
 import React from 'react';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
 import moment from 'moment';
 import { Input } from '../../toolbox/inputs';
 import { SecondaryButton } from '../../toolbox/buttons/button';
 import CopyToClipboard from '../../toolbox/copyToClipboard';
-import Icon from '../../toolbox/icon';
+// import Icon from '../../toolbox/icon';
 import Tooltip from '../../toolbox/tooltip/tooltip';
 import renderPaperwallet from '../../../utils/paperwallet';
 import styles from './passphraseBackup.css';
@@ -73,34 +73,6 @@ class PassphraseBackup extends React.Component {
                 Container={SecondaryButton}
                 containerProps={{ size: 'xs' }}
               />
-            </div>
-          </div>
-          <div className={styles.hrSection}>
-            <p>{t('OR')}</p>
-          </div>
-          <div className={`${styles.option}`}>
-            <div className={`${styles.optionContent}`}>
-              <h2>
-                {t('Paper wallet')}
-                <Tooltip
-                  title="Paper wallet"
-                >
-                  <p>
-                    {t('You can print your passphrase and store it in a safe place. ')}
-                    {t('We highly recommend deleting the PDF file after printing.')}
-                  </p>
-                </Tooltip>
-              </h2>
-              <div style={{ display: 'none' }} ref={this.setCanvasRef}>
-                <QRCode value={account.passphrase} />
-              </div>
-              <div className={styles.downloadLisk}>
-                <Icon name="fileOutline" />
-                <p className="option-value">{this.walletName}</p>
-              </div>
-              <SecondaryButton className={styles.downloadBtn} size="xs" onClick={this.generatePaperwallet}>
-                {t('Download')}
-              </SecondaryButton>
             </div>
           </div>
         </div>

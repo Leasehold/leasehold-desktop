@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import styles from './menuItems.css';
 import Icon from '../../../toolbox/icon';
-import { tokenMap } from '../../../../constants/tokens';
+// import { tokenMap } from '../../../../constants/tokens';
 
 const MenuItems = ({
-  location: { pathname }, className, items, isUserLogout, token,
+  location: { pathname }, className, items, isUserLogout, // token,
 }) => (
   <div className={`${styles.wrapper} ${className} menu-items`}>
     {
       items && items.map(item =>
         (
-          item.id === 'delegates' && token.active === tokenMap.BTC.key
+          item.id === 'delegates' // && token.active === tokenMap.BTC.key
             ? null
             : (
               <NavLink

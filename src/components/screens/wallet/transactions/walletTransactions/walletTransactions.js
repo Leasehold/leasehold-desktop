@@ -6,8 +6,8 @@ import TabsContainer from '../../../../toolbox/tabsContainer/tabsContainer';
 import WalletTab from '../../walletTab';
 import DelegateTab from '../../../../shared/delegate';
 import VotesTab from '../../../../shared/votes';
-import WalletOnboarding from './walletOnboarding';
-import analytics from '../../../../../utils/analytics';
+// *import WalletOnboarding from './walletOnboarding';
+// import analytics from '../../../../../utils/analytics';
 
 class WalletTransactions extends React.Component {
   constructor() {
@@ -35,10 +35,12 @@ class WalletTransactions extends React.Component {
     this.updateCustomFilters = this.updateCustomFilters.bind(this);
   }
 
+  /*
   componentDidMount() {
     const { settings, settingsUpdated } = this.props;
     analytics.onTriggerPageLoaded({ settings, settingsUpdated });
   }
+  */
 
   onInit() {
     this.props.getTransactions({
@@ -142,7 +144,7 @@ class WalletTransactions extends React.Component {
 
     return (
       <React.Fragment>
-        <WalletOnboarding t={t} />
+        {/* <WalletOnboarding t={t} /> */}
         <TransactionsOverviewHeader
           bookmarks={this.props.bookmarks}
           address={this.props.address}

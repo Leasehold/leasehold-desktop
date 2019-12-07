@@ -8,7 +8,7 @@ import { parseSearchParams } from '../../../../../utils/searchParams';
 import { validateAmountFormat } from '../../../../../utils/validators';
 import BookmarkAutoSuggest from './bookmarkAutoSuggest';
 import Box from '../../../../toolbox/box';
-import Converter from '../../../../shared/converter';
+// import Converter from '../../../../shared/converter';
 import Piwik from '../../../../../utils/piwik';
 import Tooltip from '../../../../toolbox/tooltip/tooltip';
 import i18n from '../../../../../i18n';
@@ -143,7 +143,7 @@ class FormBase extends React.Component {
     return (
       <Box className={styles.wrapper} width="medium">
         <Box.Header>
-          <h1>{ t('Send {{token}}', { token }) }</h1>
+          <h1>{ t('Send LSH', { token }) }</h1>
         </Box.Header>
         <Box.Content className={styles.formSection}>
           <span className={`${styles.fieldGroup} recipient`}>
@@ -184,15 +184,17 @@ class FormBase extends React.Component {
                 status={fields.amount.error ? 'error' : 'ok'}
                 feedback={fields.amount.feedback}
               />
+              {/*
               <Converter
                 className={styles.converter}
                 value={fields.amount.value}
                 error={fields.amount.error}
               />
+              */}
             </span>
             { !extraFields.processingSpeed ? (
               <span className={styles.amountHint}>
-                {t('+ Transaction fee {{fee}} LSK', {
+                {t('+ Transaction fee {{fee}} LSH', {
                   fee: formatAmountBasedOnLocale({ value: fromRawLsk(fee) }),
                 })}
                 <Tooltip
@@ -201,8 +203,8 @@ class FormBase extends React.Component {
                 >
                   <p className={styles.tooltipText}>
                     {
-                    t(`Every transaction needs to be confirmed and forged into Lisk blockchain network. 
-                    Such operations require hardware resources and because of that there is a small fee for processing those.`)
+                    t(`Transactions need to be confirmed and forged on the Leasehold blockchain network.
+                    Such operations require hardware resources and because of that there is a small processing fee.`)
                   }
                   </p>
                 </Tooltip>

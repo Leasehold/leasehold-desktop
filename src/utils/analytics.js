@@ -14,7 +14,7 @@ export default {
   onTriggerPageLoaded({ settings, settingsUpdated }) {
     if (!settings.statistics && settings.statisticsRequest === undefined) {
       settingsUpdated({ statisticsRequest: true });
-      const showAnalytics = true;
+      const showAnalytics = false;
       this.checkIfAnalyticsShouldBeDisplayed({ settings, showAnalytics });
     }
   },

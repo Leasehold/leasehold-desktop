@@ -7,7 +7,7 @@ import styles from './transactionAddress.css';
 const TransactionAddress = ({
   address, bookmarks, transactionType, t, token,
 }) => {
-  const account = [...bookmarks.LSK, ...bookmarks.BTC]
+  const account = [...bookmarks.LSK]// , ...bookmarks.BTC]
     .filter(acc => acc.address === address);
 
   // eslint-disable-next-line complexity
@@ -27,10 +27,10 @@ const TransactionAddress = ({
         return t('Blockchain Application Registration');
       // istanbul ignore next
       case 6:
-        return t('Send Lisk to Blockchain Application');
+        return t('Send LSH to Blockchain Application');
       // istanbul ignore next
       case 7:
-        return t('Send Lisk from Blockchain Application');
+        return t('Send LSH from Blockchain Application');
       default: {
         if (token === tokenMap.LSK.key) return account.length ? account[0].title : address;
         return account.length ? account[0].title : address.replace(regex.btcAddressTrunk, '$1...$3');

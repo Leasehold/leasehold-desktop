@@ -3,7 +3,7 @@ import i18next from 'i18next';
 import to from 'await-to-js';
 import actionTypes from '../constants/actions';
 import Fees from '../constants/fees';
-import { tokenMap } from '../constants/tokens';
+// import { tokenMap } from '../constants/tokens';
 import transactionTypes, { createTransactionType } from '../constants/transactionTypes';
 import { loadingStarted, loadingFinished } from './loading';
 import { extractAddress } from '../utils/account';
@@ -298,9 +298,9 @@ export const transactionBroadcasted = (transaction, callback = () => {}) =>
       data: transaction,
     });
 
-    if (activeToken !== tokenMap.BTC.key) {
-      dispatch(addNewPendingTransaction(transaction));
-    }
+    // if (activeToken !== tokenMap.BTC.key) {
+    dispatch(addNewPendingTransaction(transaction));
+    // }
 
     return dispatch(passphraseUsed(transaction.passphrase));
   };

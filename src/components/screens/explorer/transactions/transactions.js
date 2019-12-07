@@ -2,7 +2,7 @@ import { withTranslation } from 'react-i18next';
 import React from 'react';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
 import { DateTimeFromTimestamp } from '../../../toolbox/timestamp';
-import { SecondaryButton } from '../../../toolbox/buttons/button';
+// import { SecondaryButton } from '../../../toolbox/buttons/button';
 import { tokenMap } from '../../../../constants/tokens';
 import Box from '../../../toolbox/box';
 import CopyToClipboard from '../../../toolbox/copyToClipboard';
@@ -74,6 +74,7 @@ class Transactions extends React.Component {
           <Box width="medium" isLoading={isLoading}>
             <Box.Header>
               <h1>{t('Transaction details')}</h1>
+              {/*
               <CopyToClipboard
                 value={this.getLinkToCopy()}
                 text={t('Copy link')}
@@ -81,6 +82,7 @@ class Transactions extends React.Component {
                 containerProps={{ size: 'xs' }}
                 copyClassName={styles.copyIcon}
               />
+              */}
             </Box.Header>
             <Box.Content className={styles.mainContent}>
               <TransactionDetailView
@@ -145,7 +147,7 @@ class Transactions extends React.Component {
                           <span className="tx-amount">
                             <LiskAmount val={transaction.amount} />
                             {' '}
-                            {activeToken}
+                            {'LSH'}
                           </span>
                         </DiscreetMode>
                       </div>
@@ -157,7 +159,7 @@ class Transactions extends React.Component {
                     <span className="tx-fee">
                       <LiskAmount val={transaction.fee} />
                       {' '}
-                      {activeToken}
+                      {'LSH'}
                     </span>
                   </div>
                 </Box.Row>

@@ -56,7 +56,7 @@ class RecentTransactions extends Component {
               <Box.EmptyState>
                 <Icon name="iconEmptyRecentTransactions" />
                 <h1>{t('No Transactions Yet')}</h1>
-                <p>{t('A great way to start is to top up your account with some {{value}} tokens.', { value: activeToken.key })}</p>
+                <p>{t('A great way to start is to top up your account with some LSH tokens.', { value: activeToken.key })}</p>
               </Box.EmptyState>
             )
             : null

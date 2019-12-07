@@ -17,9 +17,9 @@
     border-bottom: 1px solid var(--light-border-color) !important;
 
     & .dropdownHandler {
-      background: var(--color-maastricht-blue) !important;
-      color: var(--color-white) !important;
-      border: 1px solid var(--light-border-color) !important;
+      background-color: var(--color-white) !important;
+      border: 1px solid var(--color-light-gray) !important;
+      color: var(--color-maastricht-blue);
     }
   }
 }

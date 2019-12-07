@@ -1,7 +1,7 @@
-import * as bitcoin from 'bitcoinjs-lib';
+// import * as bitcoin from 'bitcoinjs-lib';
 import numeral from 'numeral';
 import { tokenMap } from '../constants/tokens';
-import getBtcConfig from './api/btc/config';
+// import getBtcConfig from './api/btc/config';
 import i18n from '../i18n';
 import reg from './regex';
 
@@ -13,13 +13,14 @@ import reg from './regex';
  * @returns {Number} -> 0: valid, 1: invalid, -1: empty
  */
 // eslint-disable-next-line import/prefer-default-export
-export const validateAddress = (tokenType, address, netCode = 1) => {
+export const validateAddress = (tokenType, address) => { // , netCode = 1) => {
   if (address === '') {
     return -1;
   }
 
   switch (tokenType) {
     // Reference: https://github.com/bitcoinjs/bitcoinjs-lib/issues/890
+    /*
     case tokenMap.BTC.key:
       try {
         const config = getBtcConfig(netCode);
@@ -29,7 +30,7 @@ export const validateAddress = (tokenType, address, netCode = 1) => {
       } catch (e) {
         return 1;
       }
-
+    */
     case tokenMap.LSK.key:
     default:
       return reg.address.test(address) ? 0 : 1;
@@ -53,7 +54,7 @@ export const validateAddress = (tokenType, address, netCode = 1) => {
  */
 export const validateAmountFormat = ({
   value,
-  token = 'LSK',
+  token = 'LSH',
   locale = i18n.language,
 }) => {
   const errors = {

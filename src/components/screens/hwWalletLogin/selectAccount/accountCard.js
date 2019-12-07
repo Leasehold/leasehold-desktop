@@ -56,7 +56,7 @@ const AccountCard = ({
         <p>
           <LiskAmount val={account.balance} />
           {' '}
-          {t(' LSK')}
+          {t(' LSH')}
         </p>
         <span>{t('Balance')}</span>
       </div>

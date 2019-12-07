@@ -25,7 +25,7 @@ const networks = {
     name: 'Testnet',
     testnet: true,
     code: 1,
-    nodes: ['https://testnet.lisk.io'],
+    nodes: ['http://3.93.232.78:7020'],
   },
   customNode: { // network name translation t('Custom Node');
     name: 'Custom Node',

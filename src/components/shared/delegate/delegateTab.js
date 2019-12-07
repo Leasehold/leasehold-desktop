@@ -47,7 +47,7 @@ const DelegateTab = ({ delegate, account, t }) => {
             <span className={styles.label}>{t('Vote weight')}</span>
             <span>
               <LiskAmount val={delegate.vote} />
-              {` ${t('LSK')}`}
+              {` ${t('LSH')}`}
             </span>
           </li>
           <li className="approval">
@@ -63,10 +63,10 @@ const DelegateTab = ({ delegate, account, t }) => {
             {`${delegate.producedBlocks} (${delegate.missedBlocks})`}
           </li>
           <li className="forged">
-            <span className={styles.label}>{t('LSK forged')}</span>
+            <span className={styles.label}>{t('LSH forged')}</span>
             <span>
               <LiskAmount val={delegate.rewards} />
-              {` ${t('LSK')}`}
+              {` ${t('LSH')}`}
             </span>
           </li>
           <li className="last-forged">

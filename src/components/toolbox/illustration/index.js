@@ -21,7 +21,7 @@ import timeToContribute from '../../../assets/images/illustrations/time-to-contr
 import emptyBookmarkFiler from '../../../assets/images/illustrations/empty-bookmark-filter.svg';
 import emptyBookmarksList from '../../../assets/images/illustrations/empty-bookmarks-list.svg';
 import helpCenter from '../../../assets/images/illustrations/help-center.svg';
-import emptyWallet from '../../../assets/images/illustrations/empty-wallet.svg';
+// import emptyWallet from '../../../assets/images/illustrations/empty-wallet.svg';
 import diveIntoDetails from '../../../assets/images/illustrations/diveIntoDetails.svg';
 import manageYourLSK from '../../../assets/images/illustrations/manageYourLSK.svg';
 import verifyMessageError from '../../../assets/images/illustrations/verify-message-error.svg';
@@ -49,7 +49,7 @@ export const illustrations = {
   timeToContribute,
   emptyBookmarkFiler,
   emptyBookmarksList,
-  emptyWallet,
+  // emptyWallet,
   helpCenter,
   diveIntoDetails,
   manageYourLSK,

@@ -3,7 +3,7 @@ import { fromRawLsk, toRawLsk } from '../../../../../utils/lsk';
 import { loginType } from '../../../../../constants/hwConstants';
 import { tokenMap } from '../../../../../constants/tokens';
 import AccountVisual from '../../../../toolbox/accountVisual';
-import Converter from '../../../../shared/converter';
+// import Converter from '../../../../shared/converter';
 import Piwik from '../../../../../utils/piwik';
 import TransactionSummary from '../../../../shared/transactionSummary';
 import fees from '../../../../../constants/fees';
@@ -84,7 +84,7 @@ class Summary extends React.Component {
         t={t}
         account={account}
         confirmButton={{
-          label: t('Send {{amount}} {{token}}', { amount, token }),
+          label: t('Send {{amount}} LSH', { amount, token }),
           onClick: this.submitTransaction,
         }}
         cancelButton={{
@@ -111,8 +111,8 @@ class Summary extends React.Component {
         <section>
           <label>{t('Amount')}</label>
           <label className="amount-summary">
-            {`${amount} ${token}`}
-            <Converter className={styles.secondText} value={amount} />
+            {`${amount} LSH`}
+            {/* <Converter className={styles.secondText} value={amount} /> */}
           </label>
         </section>
         { fields.reference && fields.reference.value

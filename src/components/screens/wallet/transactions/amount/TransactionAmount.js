@@ -6,7 +6,7 @@ import styles from './transactionAmount.css';
 import transactionTypes from '../../../../../constants/transactionTypes';
 
 const TransactionAmount = ({
-  address, transaction, token, roundTo,
+  address, transaction, /* token, */ roundTo,
 }) => {
   const isRecieve = address === transaction.recipientId;
   // e.g. account initialization
@@ -22,7 +22,7 @@ const TransactionAmount = ({
               {isRecieve ? '' : '- '}
               <LiskAmount val={transaction.amount} roundTo={roundTo} />
               {' '}
-              {token}
+              {'LSH'}
             </span>
           </DiscreetMode>
         )

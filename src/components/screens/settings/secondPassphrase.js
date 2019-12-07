@@ -33,7 +33,7 @@ const SecondPassphraseSetting = ({
             {account.balance < Fees.setSecondPassphrase
               ? (
                 <p className={styles.highlight}>
-                  {t('You don’t have enough balance to enable it. {{fee}} LSK is required.', { fee })}
+                  {t('You don’t have enough balance to enable it. {{fee}} LSH is required.', { fee })}
                 </p>
               )
               : (
@@ -49,7 +49,7 @@ const SecondPassphraseSetting = ({
                       className={`register-second-passphrase ${styles.link}`}
                       to={`${routes.secondPassphrase.path}`}
                     >
-                      {t('Activate ({{ fee }} LSK Fee)', { fee })}
+                      {t('Activate ({{ fee }} LSH Fee)', { fee })}
                     </Link>
                   )}
                 </React.Fragment>

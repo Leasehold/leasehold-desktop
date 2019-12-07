@@ -1,23 +1,23 @@
 import React from 'react';
-import { tokenMap } from '../../../constants/tokens';
+// import { tokenMap } from '../../../constants/tokens';
 import Box from '../../toolbox/box';
 import CheckBox from '../../toolbox/checkBox';
-import LanguageSelect from './languageSelect';
+// import LanguageSelect from './languageSelect';
 import Piwik from '../../../utils/piwik';
 import SecondPassphraseSetting from './secondPassphrase';
-import Select from '../../toolbox/select';
+// import Select from '../../toolbox/select';
 import accountConfig from '../../../constants/account';
-import links from '../../../constants/externalLinks';
-import settingsConst from '../../../constants/settings';
+// import links from '../../../constants/externalLinks';
+// import settingsConst from '../../../constants/settings';
 import styles from './settings.css';
 import txTypes from '../../../constants/transactionTypes';
 
 class Settings extends React.Component {
   constructor() {
     super();
-    this.state = {
-      currencies: settingsConst.currencies,
-    };
+    // this.state = {
+    //  currencies: settingsConst.currencies,
+    // };
 
     this.setCurrency = this.setCurrency.bind(this);
     this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
@@ -70,11 +70,11 @@ class Settings extends React.Component {
       transactions: { pending },
       account,
     } = this.props;
-    const { currencies } = this.state;
+    // const { currencies } = this.state;
 
     const isHardwareWalletAccount = account.hwInfo && account.hwInfo.deviceId;
     const isHwWalletClass = isHardwareWalletAccount ? `${styles.disabled} disabled` : '';
-    const activeCurrency = currencies.indexOf(settings.currency || settingsConst.currencies[0]);
+    // const activeCurrency = currencies.indexOf(settings.currency || settingsConst.currencies[0]);
     const hasPendingSecondPassphrase = pending.find(element =>
       element.type === txTypes.setSecondPassphrase) !== undefined;
 
@@ -85,6 +85,7 @@ class Settings extends React.Component {
             <h1>{t('Settings')}</h1>
           </Box.Header>
           <Box.Content className={styles.content}>
+            {/*
             <section>
               <h2>{t('Locale')}</h2>
               <div className={styles.fieldGroup}>
@@ -100,6 +101,7 @@ class Settings extends React.Component {
               </div>
               <LanguageSelect t={t} />
             </section>
+            */}
             <section>
               <h2>{t('Security')}</h2>
               <label className={`${styles.fieldGroup} ${styles.checkboxField}`}>
@@ -114,7 +116,7 @@ class Settings extends React.Component {
                   <p>{t('Log out automatically after 10 minutes.')}</p>
                 </div>
               </label>
-              {isAuthenticated && settings.token.active !== tokenMap.BTC.key
+              {isAuthenticated // && settings.token.active !== tokenMap.BTC.key
                 ? (
                   <SecondPassphraseSetting
                     {...{
@@ -152,7 +154,7 @@ class Settings extends React.Component {
                   <p>{t('Enable a network switcher that lets you select testnet or custom node when logging in.')}</p>
                 </div>
               </label>
-              {
+              {/*
                 !isHardwareWalletAccount
                   ? (
                     <label className={`${styles.fieldGroup} ${styles.checkboxField} enableBTC`}>
@@ -164,12 +166,11 @@ class Settings extends React.Component {
                       />
                       <div>
                         <span className={styles.labelName}>{t('Enable BTC')}</span>
-                        <p>{t('By enabling it, you will be able to manage your BTC inside the application.')}</p>
+   <p>{t('By enabling it, you will be able to manage your BTC inside the application.')}</p>
                       </div>
                     </label>
                   )
                   : null
-              }
             </section>
             <section>
               <h2>{t('Privacy')}</h2>
@@ -184,12 +185,12 @@ class Settings extends React.Component {
                   <span className={styles.labelName}>
                     {t('Anonymous analytics collection')}
                   </span>
-                  <p>{t('Help improve Lisk Hub by allowing Lisk to gather anonymous usage data used for analytical purposes.')}</p>
                   <a target="_blank" href={links.privacyPolicy} className={styles.link}>
                     {t('Privacy Policy')}
                   </a>
                 </div>
               </label>
+              */}
             </section>
           </Box.Content>
         </Box>

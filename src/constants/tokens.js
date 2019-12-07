@@ -4,11 +4,11 @@ export const tokenMap = {
     label: 'Leasehold',
     icon: 'lsh',
   },
-  BTC: {
+  /* BTC: {
     key: 'BTC',
     label: 'Bitcoin',
     icon: 'btc',
-  },
+  }, */
 };
 
 export const tokenKeys = Object.keys(tokenMap);

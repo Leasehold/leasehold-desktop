@@ -78,21 +78,21 @@
   }
 
   &:global(.dark) {
-    background: var(--color-maastricht-blue);
+    background: white;
     border: 1px solid var(--light-border-color);
 
     & .dropdownContent {
       & .option {
-        background: var(--color-maastricht-blue);
+        background: white;
 
         &.active {
-          background-color: var(--color-maastricht-blue);
-          color: #4070f4;
+          background-color: white;
+          color: #81c341;
         }
 
         &:hover {
-          background-color: rgba(64, 112, 244, 0.24);
-          color: #4070f4;
+          background-color: #f5faf0;
+          color: #81c341;
         }
       }
     }

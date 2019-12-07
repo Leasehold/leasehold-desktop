@@ -17,7 +17,7 @@ const AccountInfo = ({
         <span className="balance">
           <LiskAmount val={account.balance} />
           {' '}
-          {tokenMap[token].key}
+          {'LSH'}
         </span>
       </DiscreetMode>
     </div>

@@ -26,13 +26,13 @@ const getNormalizedTimestamp = (tx) => {
 };
 
 const styles = {
-  borderColor: 'rgba(15, 126, 255, 0.5)',
+  borderColor: '#81c341',
   whiteColor: '#ffffff',
   platinumColor: '#e1e3eb',
   slateGray: '#70778b',
   whiteSmoke: '#f5f7fa80',
-  maastrichtBlue: '#0c152e',
-  ultramarineBlue: '#4070f4',
+  maastrichtBlue: '#81c341',
+  ultramarineBlue: '#81c341',
   contentFontFamily: '\'basier-circle\', sans-serif',
   fontSize: 12,
 };
@@ -119,7 +119,7 @@ export const graphOptions = ({
           .format(format);
       },
       label(tooltipItem) {
-        return i18n.t('Account Balance:          {{balance}} {{token}}', { balance: tooltipItem.yLabel, token });
+        return i18n.t('Account Balance:          {{balance}} LSH', { balance: tooltipItem.yLabel, token });
       },
     },
     mode: 'index',

@@ -47,7 +47,7 @@
   & > h1 {
     @mixin headingLarge;
 
-    color: var(--color-black);
+    color: black;
     margin: 0;
     text-align: center;
   }

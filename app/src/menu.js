@@ -18,15 +18,15 @@ const addAboutMenuForMac = ({ template, name }) => {
 };
 
 const addAboutMenuForNonMac = ({ template, electron }) => {
-  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Lisk Foundation`;
+  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Leasehold`;
   template[template.length - 1].submenu.push({
     label: i18n.t('About'),
     click(item, focusedWindow) {
       if (focusedWindow) {
         const options = {
           buttons: ['OK'],
-          icon: `${__dirname}/assets/images/LISK.png`,
-          message: `${i18n.t('Lisk Hub')}\n${i18n.t('Version')} ${electron.app.getVersion()}\n${copyright}`,
+          icon: `${__dirname}/assets/images/LSH.png`,
+          message: `${i18n.t('Leasehold Hub')}\n${i18n.t('Version')}`,
         };
         electron.dialog.showMessageBox(focusedWindow, options, () => {});
       }
@@ -42,11 +42,11 @@ const addCheckForUpdates = ({ template, checkForUpdates }) => {
 };
 
 const menu = {
-  build: (electron, checkForUpdates) => {
+  build: electron => {
     const template = menu.buildTemplate(electron);
-    if (!process.isPlatform('linux')) {
+    /* if (!process.isPlatform('linux')) {
       addCheckForUpdates({ template, checkForUpdates });
-    }
+    } */
     if (process.isPlatform('darwin')) {
       addAboutMenuForMac({ template, name: electron.app.getName() });
     } else {
@@ -117,23 +117,19 @@ const menu = {
         label: i18n.t('Help'),
         submenu: [
           {
-            label: i18n.t('Lisk Website'),
-            click: menu.onClickLink.bind(null, electron, 'https://lisk.io'),
+            label: i18n.t('Leasehold Website'),
+            click: menu.onClickLink.bind(null, electron, 'https://leasehold.io'),
           },
           {
             label: i18n.t('Discord'),
-            click: menu.onClickLink.bind(null, electron, 'https://discord.gg/CngsY6D'),
+            click: menu.onClickLink.bind(null, electron, 'https://discord.gg/8bJHhvU'),
           },
           {
-            label: i18n.t('Lisk Explorer'),
-            click: menu.onClickLink.bind(null, electron, 'https://explorer.lisk.io'),
+            label: i18n.t('Leasehold Explorer'),
+            click: menu.onClickLink.bind(null, electron, 'https://leasehold.io/explorer'),
           },
           {
             type: 'separator',
-          },
-          {
-            label: i18n.t('What\'s New...'),
-            click: menu.onClickLink.bind(null, electron, 'https://github.com/LiskHQ/lisk-hub/releases'),
           },
         ],
       },

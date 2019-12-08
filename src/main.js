@@ -13,7 +13,7 @@ import localJSONStorage from './utils/localJSONStorage';
 import loadRemoteComponent from './utils/extensions';
 import env from './constants/env';
 import ipcLocale from './utils/ipcLocale';
-import newRelease from './utils/newRelease';
+// import newRelease from './utils/newRelease';
 import LiskHubExtensions from './utils/liskHubExtensions';
 
 if (env.production) {
@@ -24,7 +24,7 @@ if (!env.test) {
   ipcLocale.init(i18n);
 }
 
-newRelease.init();
+// newRelease.init();
 
 const rootElement = document.getElementById('app');
 

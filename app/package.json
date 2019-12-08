@@ -1,11 +1,11 @@
 {
-  "name": "lisk-hub",
-  "version": "1.22.0",
-  "description": "Lisk Hub",
+  "name": "leasehold-hub",
+  "version": "1.0.0",
+  "description": "Leasehold Hub",
   "main": "./build/main.js",
   "author": {
-    "name": "Lisk Foundation",
-    "email": "admin@lisk.io"
+    "name": "Leasehold",
+    "email": "admin@leasehold.io"
   },
   "dependencies": {
     "get-port": "^4.1.0",

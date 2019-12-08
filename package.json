@@ -1,9 +1,9 @@
 {
-  "name": "lisk-hub",
-  "version": "1.22.0",
-  "description": "Lisk Hub",
-  "homepage": "https://github.com/LiskHQ/lisk-hub",
-  "bugs": "https://github.com/LiskHQ/lisk-hub/issues",
+  "name": "leasehold-hub",
+  "version": "1.0.0",
+  "description": "Leasehold Hub",
+  "homepage": "https://github.com/Leasehold/leasehold-desktop",
+  "bugs": "https://github.com/Leasehold/leasehold-desktop",
   "main": "main.js",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",

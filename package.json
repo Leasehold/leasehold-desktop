@@ -43,7 +43,7 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LiskHQ/lisk-hub"
+    "url": "https://github.com/Leasehold/leasehold-desktop"
   },
   "dependencies": {
     "@ledgerhq/hw-transport-node-hid": "4.73.2",
@@ -212,15 +212,15 @@
     "webpack-dev-server": "^3.8.1"
   },
   "build": {
-    "appId": "io.lisk.hub",
-    "productName": "Lisk Hub",
+    "appId": "io.leasehold.hub",
+    "productName": "Leasehold Hub",
     "protocols": {
-      "name": "lisk-hub",
+      "name": "leasehold-hub",
       "schemes": [
         "lisk"
       ]
     },
-    "artifactName": "lisk-hub-${os}-${arch}-${version}.${ext}",
+    "artifactName": "leasehold-hub-${os}-${arch}-${version}.${ext}",
     "publish": [
       "github"
     ],

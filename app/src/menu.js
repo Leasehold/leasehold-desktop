@@ -18,7 +18,7 @@ const addAboutMenuForMac = ({ template, name }) => {
 };
 
 const addAboutMenuForNonMac = ({ template, electron }) => {
-  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Leasehold`;
+  // const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Leasehold`;
   template[template.length - 1].submenu.push({
     label: i18n.t('About'),
     click(item, focusedWindow) {
@@ -34,12 +34,12 @@ const addAboutMenuForNonMac = ({ template, electron }) => {
   });
 };
 
-const addCheckForUpdates = ({ template, checkForUpdates }) => {
+/* const addCheckForUpdates = ({ template, checkForUpdates }) => {
   template[template.length - 1].submenu.push({
     label: i18n.t('Check for updates...'),
     click: checkForUpdates,
   });
-};
+}; */
 
 const menu = {
   build: electron => {

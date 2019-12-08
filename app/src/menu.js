@@ -42,7 +42,7 @@ const addAboutMenuForNonMac = ({ template, electron }) => {
 }; */
 
 const menu = {
-  build: electron => {
+  build: (electron) => {
     const template = menu.buildTemplate(electron);
     /* if (!process.isPlatform('linux')) {
       addCheckForUpdates({ template, checkForUpdates });

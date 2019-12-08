@@ -1,4 +1,4 @@
-import { autoUpdater } from 'electron-updater';
+// import { autoUpdater } from 'electron-updater';
 import electron from 'electron';
 import electronLocalshortcut from 'electron-localshortcut';
 import getPort from 'get-port';
@@ -7,7 +7,7 @@ import path from 'path';
 import storage from 'electron-json-storage';
 import win from './modules/win';
 import localeHandler from './modules/localeHandler';
-import updateChecker from './modules/autoUpdater';
+// import updateChecker from './modules/autoUpdater';
 import server from '../server';
 import i18nSetup from '../../i18n/i18n-setup';
 import './modules/hwManager';
@@ -23,20 +23,20 @@ const startServer = () => getPort({ port: defaultServerPort })
 
 startServer();
 
-const checkForUpdates = updateChecker({
+/* const checkForUpdates = updateChecker({
   autoUpdater,
   dialog: electron.dialog,
   win,
   process,
   electron,
-});
+}); */
 
 const { app, ipcMain } = electron;
 let appIsReady = false;
 
 const createWindow = () => {
   win.create({
-    electron, path, electronLocalshortcut, storage, checkForUpdates, serverUrl,
+    electron, path, electronLocalshortcut, storage, serverUrl,
   });
 
   if (process.env.DEBUG) {

@@ -26,7 +26,7 @@ const addAboutMenuForNonMac = ({ template, electron }) => {
         const options = {
           buttons: ['OK'],
           icon: `${__dirname}/assets/images/LSH.png`,
-          message: `${i18n.t('Leasehold Hub')}\n${i18n.t('Version')}`,
+          message: `${i18n.t('Leasehold Hub')}\n${i18n.t('Version')} ${electron.app.getVersion()}`,
         };
         electron.dialog.showMessageBox(focusedWindow, options, () => {});
       }

@@ -102,7 +102,7 @@ ipcMain.on('set-locale', (event, locale) => {
   const langCode = locale.substr(0, 2);
   if (langCode) {
     localeHandler.update({
-      langCode, electron, storage, event,// checkForUpdates,
+      langCode, electron, storage, event, // checkForUpdates,
     });
   }
 });

@@ -76,9 +76,14 @@ class TransactionSummary extends React.Component {
   }
 
   getTooltip() {
-    const { t, token } = this.props;
+    const { t, token = 'LSH' } = this.props;
     return {
       LSH: {
+        title: t('Transaction fee'),
+        children: t(`Transactions need to be confirmed and forged on the Leasehold blockchain network. 
+                    Such operations require hardware resources and because of that there is a small processing fee.`),
+      },
+      LSK: {
         title: t('Transaction fee'),
         children: t(`Transactions need to be confirmed and forged on the Leasehold blockchain network. 
                     Such operations require hardware resources and because of that there is a small processing fee.`),

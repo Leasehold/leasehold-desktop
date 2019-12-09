@@ -126,7 +126,7 @@ const menu = {
           },
           {
             label: i18n.t('Leasehold Explorer'),
-            click: menu.onClickLink.bind(null, electron, 'https://leasehold.io/explorer'),
+            click: menu.onClickLink.bind(null, electron, 'https://explorer.leasehold.io'),
           },
           {
             type: 'separator',

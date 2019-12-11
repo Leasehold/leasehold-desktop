@@ -58,7 +58,7 @@ export const validateAmountFormat = ({
   locale = i18n.language,
 }) => {
   const errors = {
-    INVALID: i18n.t('Provide a correct amount of {{token}}', { token }),
+    INVALID: i18n.t('Provide a correct amount of LSH', { token }),
     FLOATING_POINT: i18n.t('Maximum floating point is 8.'),
   };
   const { format, maxFloating } = reg.amount[locale];

@@ -28,20 +28,20 @@ class Delegates extends React.Component {
   getOnboardingSlides() {
     const { t } = this.props;
     return [{
-      title: t('Welcome to Lisk Delegates!'),
-      content: t('Lisk\'s blockchain is based on the Delegated Proof of Stake (DPoS) consensus algorithm, in which 101 delegates are voted in by token holders to secure the network.'),
+      title: t('Welcome to Leasehold Delegates!'),
+      content: t('Leasehold\'s blockchain is based on the Delegated Proof of Stake (DPoS) consensus algorithm, in which 39 delegates are voted in by token holders to secure the network.'),
       illustration: 'welcomeLiskDelegates',
     }, {
       title: t('Your voice matters'),
-      content: t('Voting for delegates gives Lisk users the opportunity to choose who they trust to secure the network and validate the transactions that are sent on it.'),
+      content: t('Voting for delegates gives Leasehold users the opportunity to choose who they trust to secure the network and validate the transactions that are sent on it.'),
       illustration: 'yourVoiceMatters',
     }, {
       title: t('Casting a vote'),
-      content: t('We encourage community members to research individual delegate contributions to the Lisk ecosystem before voting. There are several community created sites which can assist with the process.'),
+      content: t('We encourage community members to research individual delegate contributions to the Leasehold ecosystem before voting. There are several community created sites which can assist with the process.'),
       illustration: 'getRewarded',
     }, {
       title: t('Expand your knowledge'),
-      content: t('Want to know more? We’ve got you covered. Read more about Lisk’s consensus algorithm and its benefits in the Lisk Academy.'),
+      content: t('Want to know more? We’ve got you covered. Read more about Lleasehold’s consensus algorithm and its benefits in the Leasehold Academy.'),
       illustration: 'expandYourKnowledge',
     }];
   }

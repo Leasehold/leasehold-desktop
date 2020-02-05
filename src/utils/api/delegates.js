@@ -62,7 +62,7 @@ export const getDelegateByName = (liskAPIClient, name) => new Promise(async (res
   if (storedDelegate) {
     resolve(storedDelegate);
   } else {
-    const [error, response] = await to(liskAPIClient.delegates.get({ search: name, limit: 101 }));
+    const [error, response] = await to(liskAPIClient.delegates.get({ search: name, limit: 39 }));
     if (error) {
       reject(error);
     } else {
@@ -124,7 +124,7 @@ export const castVotes = async ({
 };
 
 export const getVotes = (liskAPIClient, { address }) =>
-  liskAPIClient.votes.get({ address, limit: 101, offset: 0 });
+  liskAPIClient.votes.get({ address, limit: 39, offset: 0 });
 
 export const registerDelegate = (
   liskAPIClient,

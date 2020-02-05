@@ -30,7 +30,7 @@ class VotesTab extends React.Component {
 
   componentDidMount() {
     this.props.votes.loadData({ address: this.props.address });
-    this.props.delegates.loadData({ offset: 0, limit: 101 });
+    this.props.delegates.loadData({ offset: 0, limit: 39 });
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -65,7 +65,7 @@ class VotesTab extends React.Component {
     });
     if (votes.length && !(votes.slice(0, this.state.showing).slice(-1)[0] || {}).rank) {
       const offset = Object.keys(delegates).length;
-      this.props.delegates.loadData({ offset, limit: 101 });
+      this.props.delegates.loadData({ offset, limit: 39 });
     }
     this.setState({ votes });
   }
@@ -150,7 +150,7 @@ class VotesTab extends React.Component {
                       <span>
                         <LiskAmount val={vote.rewards} />
                         {' '}
-                        {t('LSK')}
+                        {t('LSH')}
                       </span>
                     )
                     : '-'}
@@ -167,7 +167,7 @@ class VotesTab extends React.Component {
                       <span className={styles.votes}>
                         <LiskAmount val={vote.vote} />
                         {' '}
-                        {t('LSK')}
+                        {t('LSH')}
                       </span>
                     )
                     : '-'}

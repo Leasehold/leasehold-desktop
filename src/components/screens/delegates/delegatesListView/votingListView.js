@@ -176,7 +176,7 @@ class VotingListView extends React.Component {
                 filteredList.length > 0
                 && (
                   (this.state.activeFilter !== voteFilters.voted
-                    && delegates.length % 101 === 0)
+                    && delegates.length % 39 === 0)
                   || (this.state.activeFilter === voteFilters.voted
                     && filteredList.length < getVotedList(votes).length)
                 )

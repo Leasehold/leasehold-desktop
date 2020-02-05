@@ -31,7 +31,7 @@ export const getVotingLists = votes => ({
 export const getVotingError = (votes, account) => {
   let error;
   if (account.balance < Fees.vote) {
-    error = i18next.t('Not enough LSK to pay for the transaction.');
+    error = i18next.t('Not enough LSH to pay for the transaction.');
   } else if (getTotalVotesCount(votes) > votingConst.maxCountOfVotes) {
     error = i18next.t('Max amount of delegates in one voting exceeded.');
   }
@@ -42,7 +42,7 @@ export const getVote = (votes, name) => votes.find(v => v.username === name);
 
 export const splitVotesIntoRounds = ({ votes, unvotes }) => {
   const rounds = [];
-  const maxCountOfVotesInOneTurn = 33;
+  const maxCountOfVotesInOneTurn = 13;
   while (votes.length + unvotes.length > 0) {
     const votesLength = Math.min(
       votes.length,

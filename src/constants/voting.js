@@ -1,6 +1,6 @@
 const votingConst = {
-  maxCountOfVotesInOneTurn: 33,
-  maxCountOfVotes: 101,
+  maxCountOfVotesInOneTurn: 13,
+  maxCountOfVotes: 39,
   fee: 1,
 };
 

@@ -25,7 +25,7 @@ const networks = {
     name: 'Testnet',
     testnet: true,
     code: 1,
-    nodes: ['http://3.93.232.78:7020'],
+    nodes: ['https://testnet.leasehold.io'],
   },
   customNode: { // network name translation t('Custom Node');
     name: 'Custom Node',

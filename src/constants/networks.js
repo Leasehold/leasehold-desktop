@@ -2,7 +2,7 @@ const networks = {
   mainnet: { // network name translation t('Mainnet');
     name: 'Mainnet',
     code: 0,
-    nodes: ['https://testnet.leasehold.io'],
+    nodes: ['https://mainnet.leasehold.io'],
   },
   testnet: { // network name translation t('Testnet');
     name: 'Testnet',

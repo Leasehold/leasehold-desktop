@@ -12,6 +12,7 @@ module.exports = merge(baseConfig, reactConfig, {
     path: resolve(__dirname, '../app', '../app/build'),
     filename: 'bundle.[name].[hash].js',
   },
+  mode: 'production',
   optimization: {
     minimize: false,
     // minimize: true, TODO enable this lines when you remove all component.displayName

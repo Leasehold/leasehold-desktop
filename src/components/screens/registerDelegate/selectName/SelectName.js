@@ -115,8 +115,8 @@ class SelectName extends React.Component {
         <Box.Content className={`${styles.container} select-name-container`}>
           <p className={`${styles.description} select-name-text-description`}>
             {
-              t(`Delegates are the most commited Lisk community members responsible for 
-            securing the network and processing all the transactions on Lisk’s blockchain 
+              t(`Delegates are the most commited Leasehold community members responsible for 
+            securing the network and processing all the transactions on Leasehold’s blockchain 
             network.`)
             }
           </p>

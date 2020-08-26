@@ -384,7 +384,7 @@
   "The message can't contain whitespace at the beginning or end.": "The message can't contain whitespace at the beginning or end.",
   "The signature is correct": "The signature is correct",
   "The signature is incorrect": "The signature is incorrect",
-  "The top 101 delegates are able to forge new blocks and recieve forging rewards.": "The top 101 delegates are able to forge new blocks and recieve forging rewards.",
+  "The top 39 delegates are able to forge new blocks.": "The top 39 delegates are able to forge new blocks.",
   "The transaction has been canceled on your {{model}}": "The transaction has been canceled on your {{model}}",
   "The ultimate gateway to the ecosystem. Hub’s new design lets you easily manage your tokens (and much, much more).": "The ultimate gateway to the ecosystem. Hub’s new design lets you easily manage your tokens (and much, much more).",
   "The {{inputLabel}} can't be empty": "The {{inputLabel}} can't be empty",

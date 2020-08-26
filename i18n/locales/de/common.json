@@ -384,7 +384,7 @@
   "The message can't contain whitespace at the beginning or end.": "Die Nachricht darf keine Leerzeichen am Anfang oder am Ende beinhalten.",
   "The signature is correct": "Die Signatur ist korrekt",
   "The signature is incorrect": "Die Signatur ist inkorrekt",
-  "The top 101 delegates are able to forge new blocks and recieve forging rewards.": "Die top 101 Delegierten können neue Blöcke forgen und erhalten dafür Blockvergütungen.",
+  "The top 39 delegates are able to forge new blocks.": "Die top 39 Delegierten können neue Blöcke forgen.",
   "The transaction has been canceled on your {{model}}": "Die Transaktion auf deinem {{model}} wurde abgebrochen",
   "The ultimate gateway to the ecosystem. Hub’s new design lets you easily manage your tokens (and much, much more).": "Das ultimative Portal zum Leasehold Ökosystem. Hub's neues Design lässt dich deine Tokens mit Leichtigkeit verwalten (und viel, viel mehr).",
   "The {{inputLabel}} can't be empty": "Das {{inputLabel}} darf nicht leer sein",
